@@ -29,6 +29,7 @@ const userRouter = require("./routes/user.js");
 
 const dbUrl = process.env.ATLASDB_URL;
 
+
 main().then(() => {
   console.log("connected to db")
 }).catch((err) => {
@@ -49,9 +50,10 @@ app.use(express.static(path.join(__dirname, "/public")));
 
 
 const store = MongoStore.create({
-  mongourl: dbUrl,
-
-  secret: process.env.SECRET,
+  mongoUrl: dbUrl,
+  crypto: {
+    secret: process.env.SECRET,
+  },
   touchAfter: 24 * 3600,
 
 })
@@ -60,7 +62,7 @@ store.on("error", () => {
 });
 
 const sessionOptions = {
-  store: store,
+  store,
   secret: process.env.SECRET,
   resave: false,
   saveUninitialized: true
@@ -83,17 +85,6 @@ app.use((req, res, next) => {
   res.locals.currUser = req.user;
   next();
 });
-
-
-// app.get("/demouser", async (req, res) => {
-//   let fakeuser = new User({
-//     email: "student@gmail.com",
-//     username: "delta-student"
-//   });
-
-//   let registerUser = await User.register(fakeuser, "helloworld");
-//   res.send(registerUser);
-// })
 
 
 
