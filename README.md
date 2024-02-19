@@ -21,7 +21,7 @@ This project is a simple home, hotel listing web application built using Node.js
 
 
 
-[Website Name](https://homehavenlistings.onrender.com/listings)
+[Website : HomeHavenListings](https://homehavenlistings.onrender.com/listings)
 
 
 ## Installation
