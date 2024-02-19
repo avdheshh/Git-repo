@@ -14,15 +14,14 @@ This project is a simple home, hotel listing web application built using Node.js
 
 
 ## Demo
-![Demo](main page.png)
+![Demo](demo.png)
 
 
 
 
 
 
-![website demo](https://homehavenlistings.onrender.com/listings
-)
+![website demo](https://homehavenlistings.onrender.com/listings)
 
 ## Installation
 
