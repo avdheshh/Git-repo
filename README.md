@@ -6,18 +6,23 @@ This project is a simple home, hotel listing web application built using Node.js
 
 
 ## Features
-- 
+-  Designed and implemented using HTML, CSS, JavaScript, Node, Express, EJS, MongoDB
+-  The project follow "MVC" Pattern. 
+- Implemented features for user authentication, Explore listings, Create new listings, review system and show listing locations. 
+- Utilized MongoDB for database management and HTML, CSS, EJS for front-end and back-end 
+
 
 
 ## Demo
-![Demo](demo.png)
+![Demo](main page.png)
 
 
 
 
 
 
-
+![website demo](https://homehavenlistings.onrender.com/listings
+)
 
 ## Installation
 
